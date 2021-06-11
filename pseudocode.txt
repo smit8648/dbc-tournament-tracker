@@ -1,0 +1,24 @@
+## Prompt user to input the amount of participants
+
+## instantiate an empty list based on the number of participants input by user
+
+## create and display variables with values of 1-4 acting as selectors for the menu, 
+## and create an if case to determine which portion of the main menu they want to access
+
+## SIGN UP:
+    ## instantiate variable inputs for name and desired starting slot
+    ## compare the desired slot number with existing participant list and return an error if there already is a participant
+    ## append a list with the necessary information
+    ## throw error if user tries to input a sign up value outside the parameters of the list 
+    ## prompt user to return to main menu 
+
+## CANCEL SIGN UP
+    ## check to ensure that the name and starting slot exist within the list
+    ## create if statement to catch and return errors
+    ## remove associated name from participants list
+
+## View Participants
+    ## print list of participants and index +1, and format list to show 5 before and after participant
+
+## Exit
+    ## Prompt user to input a yes or no answer, and break overarching loop if so. 
