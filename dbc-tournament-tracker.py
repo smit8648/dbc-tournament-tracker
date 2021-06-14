@@ -1,7 +1,6 @@
 def getPlayerCount():
     flag = True
-    while flag:
-            
+    while flag:  
         player_count = input("How many players would you like in the tournament: ")
         if player_count.isnumeric() == False:
             print("please enter a numerical value")
@@ -12,10 +11,7 @@ def getPlayerCount():
     return (player_count)
 
 ##instantiate an empty list with however many players there are in the tournament
-
 ## !! Remove player_list instance below when trying to run menu (only for testing) !!
-
-
 
 def addPlayer(player_list):
     flag = True
@@ -30,7 +26,6 @@ def addPlayer(player_list):
             print("sorry, that position is already filled.")
     return(player_list)
 
-
 def removePlayer(player_list):
     flag = True
     while flag:
@@ -41,24 +36,18 @@ def removePlayer(player_list):
             player_list[playerPosition-1] = None
             flag = False
         else:
-            print("sorry, that position is empty.")
+            print("sorry, that position is not at that position.")
     return(player_list)
 
 def viewPlayers(player_list):
     for index, name in enumerate(player_list):
         print(index+1, name)
         
-
-
-
-
 def menu():
     flag = True
     player_list = [None] * int(getPlayerCount())
     while flag:
-        
         print("Hello, and welcome to the tournament creator. Here are your options: \n 1. Add Participant \n 2. Remove Participant \n 3. View Participant List \n 4. Exit Application")
-
         choice = int(input())
         if choice == 1:
             addPlayer(player_list)
@@ -72,9 +61,4 @@ def menu():
                 flag = False
                 SystemExit
 
-
-
-
-
-
-
+menu()
